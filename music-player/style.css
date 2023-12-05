@@ -1,0 +1,202 @@
+
+/* Images created by: https://unsplash.com/@pawel_czerwinski */
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+
+/* Media Querry: iphone (vertical) */
+@media  screen and (max-width:370px) 
+{}
+.player-container {
+  width: 95vw;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #dfefec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: oswald, sans-serif  ;
+  font-size: 12px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.player-container {
+  height: 500px;
+  width: 400px;
+  background-color: #b4bfe3;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px 5px rgba(0, 0, 0, 0.3 );
+
+
+}
+
+.img-container {
+  height: 300px;
+  width: 300px;
+  position: relative;
+  top: -50px;
+  left: 50px;
+}
+
+.img-container img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 5px 30px 5px rgba(6, 6, 6, 0.5);
+
+}
+h2 {
+  font-size: 25px;
+  text-align: center;
+  margin: 0;
+}
+
+h3 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 400;
+  margin: 5px 0 0;
+}
+
+/* Progress */
+.progress-container {
+  background: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 40px 20px;
+  height: 4px;
+  width: 90%;
+}
+
+.progress {
+  background: #050202;
+  border-radius: 5px;
+  height: 100%;
+
+  width: 0%;
+  transition: width 0.1s linear;
+}
+
+.duration-wrapper {
+  position: relative;
+  top: -25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Controls */
+.player-controls {
+  position: relative;
+  top: -15px;
+  left: 32px;
+  width: 200px;
+
+  display: flex;
+  align-items: center;
+  margin-left: 3px;
+
+}
+
+.fas {
+  font-size: 30px;
+  color: rgb(89, 89, 89);
+  margin-right: 30px;
+  cursor: pointer;
+  user-select: none;
+
+}
+
+.fas:hover {
+  filter: brightness(80%);
+}
+
+.main-button {
+  font-size: 40px;
+  position: relative;
+  top: 3px;
+}
+
+/* Media Query: iPhone (Vertical) */
+@media screen and (max-width: 376px) {
+
+
+  .img-container {
+    left: 29px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  .player-controls {
+    top: -10px;
+    left: 100px;
+  }
+}
+
+/* Your existing styles */
+
+/* Container for volume control and playback controls */
+.controls-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Volume control styles */
+.volume-control-container input[type="range"] {
+  width: 80px; /* Adjust the width as needed */
+  color: rgb(89, 89, 89) !important;
+}
+
+
+
+/* Playback controls styles */
+.player-controls {
+  display: flex;
+  align-items: center;
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 600px) {
+  /* Add responsive styles as needed */
+  .controls-container {
+      flex-direction: column; /* Stack elements vertically on small screens */
+      text-align: center; /* Center elements on small screens */
+  }
+
+  .volume-control-container,
+  .player-controls {
+      margin-top: 10px; /* Adjust the spacing between controls on small screens */
+  }
+}
+
+
+
+
+/* Add this to your existing CSS */
+.replay-container {
+  margin-right: 20px; /* Adjust the margin as needed */
+}
+
+#replay {
+  font-size: 2em; /* Adjust the font size as needed */
+}
+
+
